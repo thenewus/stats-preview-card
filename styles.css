@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0A0C1C;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+
+.container {
+    width: 1110px;
+    height: 446px;
+    background-color: #1B1937;
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+}
+
+.main {
+    margin-left: 72px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    width: 403px;
+    margin-top: 71px;
+    color: white;
+    line-height: 44px;
+}
+span {
+    color: #AB5CDB;
+}
+
+.desc {
+    width: 374px;
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: 75%;
+    margin-top: 25px;
+}
+
+.stats {
+    display: flex;
+    margin-top: 72px;
+
+}
+.data {
+    width: 83px;
+    height: 56px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.05px;
+    color: white;
+}
+.data p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: white;
+    opacity: 60%;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+.st-2, .st-3 {
+    margin-left: 60px;
+}
+img {
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+.overlay {
+    position: absolute;
+    background-color: #AB5CDB;
+    width: 540px;
+    height: 446px;
+    opacity: 70%;
+    right: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 490px;
+        height: 950px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    img {
+        width: 490px;
+        position: absolute;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        top: 0;
+        
+    }
+    .overlay {
+        width: 490px;
+        height: 404.7px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        top: 0;
+    }
+    h1 {
+        margin-top: 400px;
+    }
+    .main {
+        width: 490px;
+        text-align: center;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stats {
+        display: flex;
+        flex-direction: column;
+    }
+    .st-2, .st-3 {
+        margin-left: 0px;
+        margin-top: 41px;
+    }
+    .stats {
+        margin-top: 40px;
+    
+    }
+}
